@@ -1,0 +1,43 @@
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:27:41.213159 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:27:41.213424 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:27:54.918321 2021] [autoindex:error] [pid 17] [client 172.21.0.1:51794] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:27:58.245074 2021] [autoindex:error] [pid 19] [client 172.21.0.1:51802] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:28:04.307172 2021] [autoindex:error] [pid 21] [client 172.21.0.1:51818] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:28:30.381153 2021] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:28:44.993991 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:28:44.994232 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:28:55.059452 2021] [autoindex:error] [pid 17] [client 172.22.0.1:38872] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:28:58.262819 2021] [autoindex:error] [pid 19] [client 172.22.0.1:38886] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:29:00.105884 2021] [autoindex:error] [pid 19] [client 172.22.0.1:38886] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:29:35.294028 2021] [autoindex:error] [pid 21] [client 172.22.0.1:38894] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:29:56.424027 2021] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:30:03.110795 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:30:03.111126 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:30:14.495450 2021] [autoindex:error] [pid 18] [client 172.23.0.1:50598] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.php,index.html) found, and server-generated directory index forbidden by Options directive
+[Tue Oct 05 14:30:34.127625 2021] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:30:41.081863 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:30:41.082150 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:42:46.700091 2021] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:42:47.427184 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:42:47.427484 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:44:44.993617 2021] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:56:40.323645 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.48 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:56:40.324148 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 14:57:47.897298 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.27.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 14:58:08.156274 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.48 (Debian) configured -- resuming normal operations
+[Tue Oct 05 14:58:08.156730 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 15:05:16.808885 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.29.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 15:05:25.123119 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.48 (Debian) configured -- resuming normal operations
+[Tue Oct 05 15:05:25.123479 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Tue Oct 05 15:15:38.300601 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.30.0.3. Set the 'ServerName' directive globally to suppress this message
+[Tue Oct 05 15:15:47.292569 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.48 (Debian) configured -- resuming normal operations
+[Tue Oct 05 15:15:47.292842 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

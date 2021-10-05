@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: web
+        ports:
+            - "8080:80"
+        volumes:
+            - ./:/var/www/html
+            - ./apache.conf:/etc/apache2/sites-enabled/myproject-web.conf
+            - ./var/log:/var/log/apache2
+        links:
+            - mongodb
+    mongodb:
+        container_name: mongodb
+        image: mongo:latest
+        ports:
+            - "10101:27017"
