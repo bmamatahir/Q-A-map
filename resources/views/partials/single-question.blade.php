@@ -9,7 +9,31 @@
     </h2>
     <div id="collapse-{{ $question->id }}" class="accordion-collapse collapse {{ $loop->first ? 'show': '' }}" aria-labelledby="heading-{{ $question->id }}" data-bs-parent="#{{ $accordionId ?? 'accordionExample'}}">
         <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="mb-3 fw-bold"> - Answers <div class="badge bg-warning">{{$question->answers()->count()}}</div></div>
+            <div class="d-grid gap-3">
+                @forelse($question->answers as $answer)
+                    <div class="py-2 px-3 border">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <div class="avatar fw-bold">
+                                    {{ $answer->creator->initials() }}
+                                </div>
+                            </div>
+                            <div>
+                                {{ $answer->content }}
+                            </div>
+                        </div>
+
+                        <div class="text-end">
+                            <div class="text-muted fs-6 py-2">
+                                By <strong>{{ $answer->creator->name }}</strong> At <strong>{{ $answer->created_at }}</strong>
+                            </div>
+                        </div>
+                    </div>
+                @empty
+                    <p>No Answers</p>
+                @endforelse
+            </div>
         </div>
     </div>
 </div>

@@ -50,4 +50,12 @@ class User extends Authenticatable
     public function likes() {
         return $this->belongsToMany(Question::class, 'user_likes', 'question_id', 'answer_id');
     }
+
+    function initials()
+    {
+        $ret = '';
+        foreach (explode(' ', $this->name) as $word)
+            $ret .= strtoupper($word[0]);
+        return $ret;
+    }
 }

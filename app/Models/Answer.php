@@ -12,4 +12,12 @@ class Answer extends Model
     protected $fillable = [
         'content',
     ];
+
+    public function creator() {
+        return $this->belongsTo(User::class, 'user_id', '_id');
+    }
+
+    public function question() {
+        return $this->belongsTo(Question::class);
+    }
 }
