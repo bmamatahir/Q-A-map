@@ -10,8 +10,6 @@
         </div>
 
 
-
-
         <div class="accordion" id="accordionExample">
             @forelse ($questions as $q)
                 @include('partials.single-question', ['question' => $q, 'accordionId' => 'accordionExample'])
@@ -19,7 +17,6 @@
                 <p>No questions</p>
             @endforelse
         </div>
-
 
     </div>
 @endsection

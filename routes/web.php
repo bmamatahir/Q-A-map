@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\QuestionController::class, 'index'])->name('brows-question');
+Route::get('/', [\App\Http\Controllers\QuestionController::class, 'index'])->name('home');
+
+Auth::routes();
