@@ -1,12 +1,25 @@
-
 @extends('layouts.app')
 
 @section('title', 'Home page')
 
 @section('content')
     <div class="container my-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid autem culpa, dolore dolores
-        ducimus fugit inventore iste minus nobis optio provident quam repellat veritatis voluptatibus? Ducimus expedita
-        magnam rem.
+        <div class="mb-5">
+            <h2>Nearby questions</h2>
+            <p class="text-muted">Enable your GPS feature for better experience</p>
+        </div>
+
+
+
+
+        <div class="accordion" id="accordionExample">
+            @forelse ($questions as $q)
+                @include('partials.single-question', ['question' => $q, 'accordionId' => 'accordionExample'])
+            @empty
+                <p>No questions</p>
+            @endforelse
+        </div>
+
+
     </div>
 @endsection

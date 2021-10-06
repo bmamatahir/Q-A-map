@@ -22,7 +22,7 @@ class QuestionFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->randomElement,
+            'title' => $this->faker->realText(20),
             'content' => $this->faker->realText(100),
             'lat' => $this->faker->latitude,
             'long' => $this->faker->longitude,
