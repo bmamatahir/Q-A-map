@@ -7,6 +7,10 @@
     </div>
 
 
+    <fieldset @if($questions->count() == 0) disabled @endif>
+        <livewire:question-sort-and-filter />
+    </fieldset>
+
     <div class="accordion" id="accordionExample">
         @forelse ($questions as $q)
             <livewire:single-question :question="$q" :opened="$loop->first">
