@@ -1,3 +1,5 @@
+@section('title', 'All available question')
+
 <div class="container my-5">
     <div class="mb-5">
         <h2>Nearby questions</h2>

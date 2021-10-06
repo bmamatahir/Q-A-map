@@ -1,3 +1,5 @@
+@section('title', 'Ask Question')
+
 <div class="container my-5">
     <div class="mb-5 text-center">
         <h2>Ask whatever you want</h2>
