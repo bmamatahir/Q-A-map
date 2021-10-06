@@ -1,4 +1,4 @@
-<div class="accordion-item">
+<div class="accordion-item mb-3 border">
     <h2 class="accordion-header" id="heading-{{ $question->id }}">
         <div class="accordion-button {{ !$opened ? 'collapsed': '' }}" type="button" data-bs-toggle="collapse"
              data-bs-target="#collapse-{{ $question->id }}" aria-expanded="{{ $opened ? 'true': 'false' }}"
@@ -13,12 +13,9 @@
                 </div>
                 <div>
                     @auth
-
-
                         <div class="spinner-grow spinner-grow-sm" role="status" wire:loading>
                             <span class="visually-hidden">Loading...</span>
                         </div>
-
                         <div  wire:click.prevent="like()" class="{{ $liked ? 'text-danger' : '' }}" wire:loading.remove>
                             <svg  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="18" height="18"
                                  preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
@@ -64,6 +61,11 @@
                 @empty
                     <p>No Answers</p>
                 @endforelse
+
+                <fieldset @guest disabled @endguest>
+                    @guest<legend class="text-decoration-underline font-monospace text-warning fs-6"> Please login to leave an answer </legend>@endguest
+                    <livewire:answer-question :question="$question"/>
+                </fieldset>
             </div>
         </div>
     </div>
