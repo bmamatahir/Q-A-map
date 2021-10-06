@@ -14,7 +14,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        $questions = Question::with('answers.creator')->orderBy('created_at', 'desc')->get();
+        $questions = Question::with(['answers.creator', 'creator'])->orderBy('created_at', 'desc')->get();
         return view('home', compact('questions'));
     }
 

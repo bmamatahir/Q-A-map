@@ -19,4 +19,8 @@ class Question extends Model
     public function answers() {
         return $this->hasMany(Answer::class);
     }
+
+    public function creator() {
+        return $this->belongsTo(User::class, 'user_id', '_id');
+    }
 }

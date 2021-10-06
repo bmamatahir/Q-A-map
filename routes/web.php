@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\QuestionController;
 use \App\Http\Livewire\CreateQuestion;
+use \App\Http\Livewire\ListQuestions;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,7 @@ use \App\Http\Livewire\CreateQuestion;
 |
 */
 
-Route::get('/', [QuestionController::class, 'index'])->name('home');
+Route::get('/', ListQuestions::class)->name('home');
 
 Route::get('/question/ask', CreateQuestion::class)
     ->name('ask-question')

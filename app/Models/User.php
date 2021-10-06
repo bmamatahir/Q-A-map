@@ -48,7 +48,7 @@ class User extends Authenticatable
     }
 
     public function likes() {
-        return $this->belongsToMany(Question::class, 'user_likes', 'question_id', 'answer_id');
+        return $this->belongsTo(Question::class, null, 'users_ids', 'question_id');
     }
 
     function initials()

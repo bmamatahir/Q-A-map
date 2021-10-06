@@ -15,7 +15,7 @@ class CreateQuestion extends Component
     {
         return view('livewire.create-question')
             ->extends('layouts.app')
-            ->layoutData(['title' => 'Show Posts']);
+            ->layoutData(['title' => 'Ask Question']);
     }
 
 
