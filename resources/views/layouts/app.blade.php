@@ -18,6 +18,11 @@
 
 @include('partials.nav-bar')
 
+<div class="container">
+    {!! displayAlert() !!}
+</div>
+
+
 @yield('content')
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

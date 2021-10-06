@@ -47,9 +47,9 @@
             </ul>
 
 
-            <form class="d-flex">
-                <button class="btn btn-primary" type="submit">Ask Question</button>
-            </form>
+            <div>
+                <a href="{{ route('ask-question') }}" class="btn btn-primary" type="submit">Ask Question</a>
+            </div>
         </div>
     </div>
 </nav>
